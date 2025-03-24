@@ -9,5 +9,7 @@
         font-weight: 500;
         line-height: 30px;
         text-align: left;
+
+        @media screen and (max-width: 1024px) {}
     }
 }

@@ -3,12 +3,21 @@
     padding: 21px 0 93px 0;
     background: url(../img/bg.jpeg) center (center / cover) no-repeat;
 
+    @media screen and (max-width: 1024px) {
+        background-position: 30% 20%;
+    }
+
     &__wrapper {
         display: flex;
         flex-direction: column;
         align-items: flex-end;
         margin-top: 90px;
+
+        @media screen and (max-width: 1024px) {
+            align-items: center;
+        }
     }
+
 
     &__header {
         color: rgb(255, 255, 255);
@@ -16,6 +25,11 @@
         font-weight: 700;
         line-height: 42px;
         text-transform: uppercase;
+
+        @media screen and (max-width: 768px) {
+            text-align: center;
+            font-size: 36px;
+        }
     }
 
     &__subheader {
@@ -25,6 +39,11 @@
         font-weight: 500;
         line-height: 24px;
         text-transform: uppercase;
+
+        @media screen and (max-width: 768px) {
+            font-size: 18px;
+            text-align: center;
+        }
     }
 
     &__icons {
@@ -32,6 +51,12 @@
         width: 425px;
         display: flex;
         justify-content: space-between;
+
+        @media screen and (max-width: 576px) {
+            width: auto;
+            align-items: center;
+            flex-direction: column;
+        }
     }
 
     &__icon {
@@ -48,6 +73,9 @@
             margin-bottom: 20px;
         }
 
+        @media screen and (max-width: 576px) {
+            margin-top: 20px;
+        }
     }
 
     &__link {

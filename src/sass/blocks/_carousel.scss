@@ -1,10 +1,25 @@
 .carousel {
     padding: 81px;
 
+    @media screen and (max-width: 992px) {
+        padding: 20px;
+    }
+
     &__inner {
         position: relative;
         width: 750px;
         margin: 0 auto;
+
+        div {
+            img {
+                width: 100%;
+            }
+        }
+
+        @media screen and (max-width: 1024px) {
+            width: auto;
+        }
+
     }
 
     .slick-prev,
@@ -26,5 +41,21 @@
     .slick-next {
         right: -66px;
         left: auto;
+    }
+
+    .slick-dots {
+        margin-top: 20px;
+        list-style-type: none;
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+
+        .slick-active {
+            button {
+                background-color: $main-color;
+                color: white;
+            }
+
+        }
     }
 }
