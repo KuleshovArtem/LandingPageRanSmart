@@ -1,0 +1,59 @@
+.feedback {
+    padding-bottom: 50px;
+
+    &__item {
+        margin-top: 60px;
+        display: flex;
+
+        @media screen and (max-width: 768px) {
+            flex-direction: column;
+            align-items: center;
+
+        }
+
+        img {
+            width: 169px;
+            height: 169px;
+        }
+    }
+
+    &__text {
+        padding-right: 50px;
+        margin-left: 60px;
+
+        @media screen and (max-width: 768px) {
+            margin-top: 40px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+            padding-right: 0;
+            margin-left: 0;
+        }
+    }
+
+    &__subtitle {
+        color: rgb(13, 13, 13);
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 18px;
+        text-align: left;
+    }
+
+    &__count {
+        color: rgb(100, 100, 100);
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 22px;
+        text-align: left;
+    }
+
+    &__descr {
+        margin-top: 10px;
+        color: rgb(13, 13, 13);
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 24px;
+        text-align: left;
+    }
+}

@@ -1,5 +1,4 @@
 .catalog {
-    display: none;
     padding-bottom: 100px;
 
     &__tabs {
@@ -11,13 +10,16 @@
         gap: 10px;
         margin-bottom: 0;
         padding: 0;
+
+        @media screen and (max-width: 768px) {
+            flex-direction: column;
+        }
     }
 
     &__tab {
         width: 220px;
         height: 50px;
         border: 2px solid rgb(208, 208, 208);
-        // background: rgba(0, 0, 0, 0);
         color: rgb(107, 107, 107);
         font-size: 18px;
         font-weight: 400;
@@ -52,6 +54,11 @@
 
         &_active {
             display: flex;
+        }
+
+        @media screen and (max-width: 1024px) {
+
+            justify-content: center;
         }
     }
 
